@@ -1,0 +1,9 @@
+<h1>show page</h1>
+<div>
+  <%= @post.title %>
+  <br>
+  <%= @post.body %>
+</div>
+
+<%= button_to 'Back', welcome_index_path, :method => "get" %>
+<%= button_to 'Edit', edit_post_path, :method => "get" %>

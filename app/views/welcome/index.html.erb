@@ -1,0 +1,11 @@
+<h1>Welcome to Stack Overflow Mockery</h1>
+
+<% Post.all.each do |post| %>
+  <ul>
+    <%= link_to post.title, post_path(post) %>
+  </ul>
+<% end %>
+
+ <%= button_to 'New Post!', posts_new_path, :method => "get" %>
+
+

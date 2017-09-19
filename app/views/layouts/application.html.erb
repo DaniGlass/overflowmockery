@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OverflowMock</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <div id="user_header">
+      <%= link_to "Sign Up", new_user_path %>
+      <%= link_to "Log In", new_session_path %>
+      <%= link_to "home", welcome_index_path %>
+    </div>
+    <%= yield %>
+  </body>
+</html>
